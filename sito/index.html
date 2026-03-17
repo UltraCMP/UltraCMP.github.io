@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Ultra Components – Specialisti nell'assemblaggio, riparazione e ottimizzazione di PC. Affidati al nostro team di esperti per il tuo computer." />
+  <title>Ultra Components – Assemblaggio, Riparazione & Ottimizzazione PC</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <!-- EmailJS SDK -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-ultra">ultra</span>
+        <span class="logo-components">components</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-link">Chi Siamo</a></li>
+        <li><a href="#services" class="nav-link">Servizi</a></li>
+        <li><a href="#team" class="nav-link">Team</a></li>
+        <li><a href="#contact" class="nav-link">Contatti</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="blob blob-purple"></div>
+      <div class="blob blob-teal"></div>
+      <div class="blob blob-blue"></div>
+    </div>
+    <div class="hero-content">
+      <h1 class="hero-title" data-aos="fade-up">
+        <span class="title-ultra">ultra</span>
+        <span class="title-components">components</span>
+      </h1>
+      <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="100">
+        Assembliamo, ripariamo e ottimizziamo PC ad alte prestazioni.<br />
+        Il tuo hardware, portato al massimo del suo potenziale.
+      </p>
+      <div class="hero-cta-group" data-aos="fade-up" data-aos-delay="200">
+        <button class="btn-primary"
+          onclick="document.getElementById('services').scrollIntoView({behavior:'smooth'})">Scopri i Servizi</button>
+        <button class="btn-ghost"
+          onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Parlaci del tuo PC</button>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Scorri</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+
+  <!-- ===== CHI SIAMO ===== -->
+  <section class="about" id="about">
+    <div class="section-inner">
+      <div class="section-tag" data-aos="fade-up">Chi Siamo</div>
+      <h2 class="section-title" data-aos="fade-up">
+        Una squadra di<br /><span class="gradient-text">appassionati di hardware</span>
+      </h2>
+      <p class="about-text" data-aos="fade-up" data-aos-delay="100">
+        Siamo <strong>Ultra Components</strong>: un gruppo di professionisti uniti dalla stessa passione per il mondo
+        del PC.
+        Ogni membro del nostro team porta competenze specifiche — dall'ingegneria hardware al software — per offrirti
+        un servizio completo, preciso e su misura. Crediamo che ogni computer debba essere perfetto: veloce, stabile e
+        potente.
+      </p>
+      <div class="about-cards" data-aos="fade-up" data-aos-delay="150">
+        <div class="about-card">
+          <div class="about-icon">🔩</div>
+          <h3>Passione Hardware</h3>
+          <p>Conosciamo ogni componente inside-out. Scegliamo solo i migliori per te.</p>
+        </div>
+        <div class="about-card">
+          <div class="about-icon">🛡️</div>
+          <h3>Qualità Garantita</h3>
+          <p>Ogni lavoro è testato e certificato prima della consegna. Zero compromessi.</p>
+        </div>
+        <div class="about-card">
+          <div class="about-icon">⚡</div>
+          <h3>Massima Performance</h3>
+          <p>Ottimizziamo ogni aspetto del sistema per estrarre le massime prestazioni.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVIZI ===== -->
+  <section class="services" id="services">
+    <div class="section-inner">
+      <div class="section-tag" data-aos="fade-up">I Nostri Servizi</div>
+      <h2 class="section-title" data-aos="fade-up">
+        Tutto ciò di cui<br /><span class="gradient-text">il tuo PC ha bisogno</span>
+      </h2>
+      <div class="services-grid">
+
+        <div class="service-card" data-aos="fade-up">
+          <div class="service-glow service-glow-purple"></div>
+          <div class="service-icon-wrap">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="4" y="8" width="40" height="28" rx="3" stroke="currentColor" stroke-width="2.5" />
+              <path d="M16 36v4M32 36v4M10 40h28" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" />
+              <rect x="10" y="14" width="28" height="16" rx="2" fill="currentColor" opacity="0.15" />
+              <path d="M18 22h12M24 18v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            </svg>
+          </div>
+          <h3 class="service-title">Assemblaggio PC</h3>
+          <p class="service-desc">Costruiamo il PC dei tuoi sogni da zero. Selezioniamo i componenti migliori in base al
+            tuo budget e alle tue esigenze, dal gaming alla workstation professionale.</p>
+          <ul class="service-list">
+            <li>Configurazione personalizzata</li>
+            <li>Compatibilità garantita</li>
+            <li>Test di stress completo</li>
+            <li>Installazione OS inclusa</li>
+          </ul>
+        </div>
+
+        <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-glow service-glow-teal"></div>
+          <div class="service-icon-wrap">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24 6L6 18v24h36V18L24 6z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round" />
+              <path d="M16 42V30a4 4 0 014-4h8a4 4 0 014 4v12" stroke="currentColor" stroke-width="2.5" />
+              <path d="M12 22l12-8 12 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+              <circle cx="24" cy="20" r="3" fill="currentColor" opacity="0.3" />
+            </svg>
+          </div>
+          <h3 class="service-title">Riparazione PC</h3>
+          <p class="service-desc">Diagnosi rapida e riparazione professionale di qualsiasi guasto hardware o software.
+            Rimettiamo in vita il tuo computer in tempi record.</p>
+          <ul class="service-list">
+            <li>Diagnosi gratuita</li>
+            <li>Sostituzione componenti</li>
+            <li>Recovery dati</li>
+            <li>Interventi urgenti</li>
+          </ul>
+        </div>
+
+        <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-glow service-glow-blue"></div>
+          <div class="service-icon-wrap">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24 4l4 8 8 2-6 6 1 9-7-4-7 4 1-9-6-6 8-2 4-8z" stroke="currentColor" stroke-width="2.5"
+                stroke-linejoin="round" />
+              <circle cx="24" cy="28" r="10" stroke="currentColor" stroke-width="2.5" />
+              <path d="M24 24v4l3 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            </svg>
+          </div>
+          <h3 class="service-title">Ottimizzazione PC</h3>
+          <p class="service-desc">Massimizziamo le prestazioni del tuo sistema con overclock, pulizia termica,
+            ottimizzazione software e tuning avanzato per ogni componente.</p>
+          <ul class="service-list">
+            <li>Overclock CPU & GPU</li>
+            <li>Thermal paste replacement</li>
+            <li>Pulizia e manutenzione</li>
+            <li>Ottimizzazione software</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TEAM ===== -->
+  <section class="team" id="team">
+    <div class="section-inner">
+      <div class="section-tag" data-aos="fade-up">Il Nostro Team</div>
+      <h2 class="section-title" data-aos="fade-up">
+        Persone reali,<br /><span class="gradient-text">competenze straordinarie</span>
+      </h2>
+      <p class="team-intro" data-aos="fade-up" data-aos-delay="50">
+        Siamo un gruppo unito dalla stessa passione: portare ogni PC al suo massimo potenziale.
+      </p>
+      <div class="team-grid">
+        <div class="team-card" data-aos="fade-up">
+          <div class="team-avatar" style="--avatar-color: #7c3aed;">
+            <span>S</span>
+          </div>
+          <h3 class="team-name">Shady</h3>
+          <p class="team-role">Software Specialist</p>
+          <p class="team-bio">Specializzato in software e sistemi operativi.</p>
+        </div>
+        <div class="team-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="team-avatar" style="--avatar-color: #0d9488;">
+            <span>C</span>
+          </div>
+          <h3 class="team-name">Corrado</h3>
+          <p class="team-role">Hardware Specialist</p>
+          <p class="team-bio">Specializzato in hardware e assemblaggio pc.</p>
+        </div>
+        <div class="team-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="team-avatar" style="--avatar-color: #2563eb;">
+            <span>M</span>
+          </div>
+          <h3 class="team-name">Matteo</h3>
+          <p class="team-role">Benchmark Specialist</p>
+          <p class="team-bio">Specializzato in benchmark, analisi di prestazioni e stabilità del sistema.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHY US ===== -->
+  <section class="whyus" id="whyus">
+    <div class="whyus-bg">
+      <div class="blob blob-purple" style="top:20%;right:5%;width:400px;height:400px;"></div>
+      <div class="blob blob-teal" style="bottom:10%;left:5%;width:350px;height:350px;"></div>
+    </div>
+    <div class="section-inner">
+      <div class="section-tag" data-aos="fade-up">Perché Sceglierci</div>
+      <h2 class="section-title" data-aos="fade-up">
+        L'eccellenza che<br /><span class="gradient-text">fa la differenza</span>
+      </h2>
+      <div class="why-list">
+        <div class="why-item" data-aos="fade-right">
+          <div class="why-num">01</div>
+          <div class="why-content">
+            <h3>Diagnosi Gratuita</h3>
+            <p>Analizziamo il tuo PC senza costi preliminari. Saprai subito cosa non va e quanto costerà sistemarlo.</p>
+          </div>
+        </div>
+        <div class="why-item" data-aos="fade-right" data-aos-delay="100">
+          <div class="why-num">02</div>
+          <div class="why-content">
+            <h3>Tempi Rapidi</h3>
+            <p>Tempi rapidi e affidabili, per te e per il tuo PC.</p>
+          </div>
+        </div>
+        <div class="why-item" data-aos="fade-right" data-aos-delay="200">
+          <div class="why-num">03</div>
+          <div class="why-content">
+            <h3>Garanzia Assicurata e Gratuita</h3>
+            <p>Ogni servizio include garanzia. Se qualcosa non va, torniamo sul problema senza costi aggiuntivi.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTATTI ===== -->
+  <section class="contact" id="contact">
+    <div class="section-inner">
+      <div class="section-tag" data-aos="fade-up">Contattaci</div>
+      <h2 class="section-title" data-aos="fade-up">
+        Parliamo del<br /><span class="gradient-text">tuo progetto</span>
+      </h2>
+      <div class="contact-wrapper" data-aos="fade-up" data-aos-delay="100">
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon">📧</div>
+            <div>
+              <strong>Email</strong>
+              <p>ultracomponents20@gmail.com</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                <path d="M24 4.3c5.2 0 5.8 0 7.9.1 1.9.1 3 .4 3.7.7a6.2 6.2 0 0 1 2.3 1.5 6.2 6.2 0 0 1 1.5 2.3c.3.7.6 1.8.7 3.7.1 2.1.1 2.7.1 7.9s0 5.8-.1 7.9c-.1 1.9-.4 3-.7 3.7a6.6 6.6 0 0 1-3.8 3.8c-.7.3-1.8.6-3.7.7-2.1.1-2.7.1-7.9.1s-5.8 0-7.9-.1c-1.9-.1-3-.4-3.7-.7a6.2 6.2 0 0 1-2.3-1.5 6.2 6.2 0 0 1-1.5-2.3c-.3-.7-.6-1.8-.7-3.7C4.3 29.8 4.3 29.2 4.3 24s0-5.8.1-7.9c.1-1.9.4-3 .7-3.7A6.2 6.2 0 0 1 6.6 10a6.2 6.2 0 0 1 2.3-1.5c.7-.3 1.8-.6 3.7-.7C14.7 4.3 15.3 4.3 24 4.3zm0-3.3c-5.3 0-6 0-8.1.1-2.1.1-3.5.4-4.8.9a9.5 9.5 0 0 0-3.4 2.2A9.5 9.5 0 0 0 5.5 7.6c-.5 1.3-.8 2.7-.9 4.8C4.5 14.5 4.5 15.2 4.5 24s0 9.5.1 12.6c.1 2.1.4 3.5.9 4.8a9.5 9.5 0 0 0 2.2 3.4 9.5 9.5 0 0 0 3.4 2.2c1.3.5 2.7.8 4.8.9 2.1.1 2.8.1 8.1.1s6 0 8.1-.1c2.1-.1 3.5-.4 4.8-.9a9.9 9.9 0 0 0 5.6-5.6c.5-1.3.8-2.7.9-4.8.1-2.1.1-2.8.1-8.1s0-6-.1-8.1c-.1-2.1-.4-3.5-.9-4.8a9.5 9.5 0 0 0-2.2-3.4A9.5 9.5 0 0 0 36.9 5c-1.3-.5-2.7-.8-4.8-.9C30 4 29.3 4 24 4zm0 10.2a9.8 9.8 0 1 0 0 19.6 9.8 9.8 0 0 0 0-19.6zm0 16.2a6.4 6.4 0 1 1 0-12.8 6.4 6.4 0 0 1 0 12.8zm10.2-18.7a2.3 2.3 0 1 0 0 4.6 2.3 2.3 0 0 0 0-4.6z" fill="currentColor"/>
+              </svg>
+            </div>
+            <div>
+              <strong>Instagram</strong>
+              <p><a href="https://www.instagram.com/ultracmp2001?igsh=MXU4cTEzcm03eDlxYw==" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:underline;">@ultracmp2001</a></p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                <path d="M34 6h-6v24a4 4 0 1 1-4-4v-6a10 10 0 1 0 10 10V18a16 16 0 0 0 9 3v-6a10 10 0 0 1-9-9z"
+                  fill="currentColor" />
+              </svg>
+            </div>
+            <div>
+              <strong>TikTok</strong>
+              <p><a href="https://www.tiktok.com/@ultracmp" target="_blank" rel="noopener noreferrer"
+                  style="color:inherit;text-decoration:underline;">@ultracmp</a></p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">📍</div>
+            <div>
+              <strong>Zona</strong>
+              <p>Italia – Disponibili anche da remoto</p>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm" onsubmit="handleSubmit(event)" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="formName">Nome</label>
+              <input type="text" id="formName" placeholder="Il tuo nome" required />
+            </div>
+            <div class="form-group">
+              <label for="formEmail">Email</label>
+              <input type="email" id="formEmail" placeholder="tua@email.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="formService">Servizio</label>
+            <select id="formService">
+              <option value="">Seleziona un servizio</option>
+              <option value="assembly">Assemblaggio PC</option>
+              <option value="repair">Riparazione PC</option>
+              <option value="optimization">Ottimizzazione PC</option>
+              <option value="other">Altro</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="formMessage">Messaggio</label>
+            <textarea id="formMessage" placeholder="Descrivi il tuo problema o progetto..." rows="4"
+              required></textarea>
+          </div>
+          <button type="submit" class="btn-primary btn-full" id="submitBtn">Invia Messaggio</button>
+          <div class="form-success" id="formSuccess">
+            ✅ Messaggio inviato! Ti risponderemo presto.
+          </div>
+          <div class="form-error" id="formError">
+            ❌ Errore nell'invio. Riprova o scrivici direttamente a ultracomponents20@gmail.com
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-ultra">ultra</span>
+        <span class="logo-components">components</span>
+      </div>
+      <p class="footer-tagline">Assembliamo il futuro, un componente alla volta.</p>
+      <div class="footer-links">
+        <a href="#about">Chi Siamo</a>
+        <a href="#services">Servizi</a>
+        <a href="#team">Team</a>
+        <a href="#contact">Contatti</a>
+      </div>
+      <p class="footer-copy">© 2026 Ultra Components. Tutti i diritti riservati.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
